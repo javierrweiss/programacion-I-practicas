@@ -1,4 +1,4 @@
-# Prácticas de programación en Clojure
+# 🔥🔥🔥 Prácticas de programación en Clojure 🔥🔥🔥
 
 Esta es una plantilla (*template*) diseñada para el curso de Programación I de la Universidad de Flores (**UFLO**).
 
