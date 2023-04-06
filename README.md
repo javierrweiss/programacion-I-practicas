@@ -48,7 +48,7 @@ Ambos entornos son muy similares. Utiliza el que prefieras.
 
 #### Activando la extensión para Clojure
 
-- Para que nuestro editor de código pueda asistirnos en la programación con Clojure necesitamos instalar una extensión. A mano izquierda selecciona el quinto ícono que representa cuatro cuadrados y en el menu que te aparece a continuación escribe *calva*.
+- Para que nuestro editor de código pueda asistirnos en la programación con Clojure necesitamos instalar una extensión. A mano izquierda selecciona el quinto ícono que representa cuatro cuadrados y en el menu que te aparece a continuación escribe [calva](https://calva.io/).
 Haz click sobre el segundo ítem y espera que se instale. 
 
 #### Iniciando el REPL
