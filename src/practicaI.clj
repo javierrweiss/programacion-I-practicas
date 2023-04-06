@@ -47,6 +47,12 @@
 ;;     con las llaves que haya elegido para los indicadores 'Población' y 'Precios al consumidor'.
 
 
+
+;; 4. Cree una función que, recibiendo un nombre como argumento, devuelva un saludo. Ejemplo:
+;;    (saludar "Juan") => "¡Hola, Juan!"
+
+
+
 (comment 
 ;; Utilice este espacio para experimentar con el código. Luego, cuando esté seguro que el 
 ;; código trabaja correctamente, cópielo a su lugar correspondiente arriba.   
