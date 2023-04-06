@@ -23,7 +23,7 @@ GitHub es un repositorio en la nube basado en un software de control de versione
 
 ### Pasos para utilizar el template o plantilla
 
-- Para utilizar el template, debes ir a la url de este repositorio (https://github.com/javierrweiss/programacion-I-practicas) y hacer clic en **Use this template** (Usar esta plantilla) en la parte superior derecha.
+- Para utilizar el template debes ubicarte en la url de este repositorio (https://github.com/javierrweiss/programacion-I-practicas) -una vez que lo hayas elegido, no es necesario volver acá cuando quieras volver a crear un repositorio usando este template- y hacer clic en **Use this template** (Usar esta plantilla) en la parte superior derecha.
 - Selecciona **Create a new repository** (Crear un repositorio nuevo) y escribe el nombre y la descripción que quieras para tu repositorio.
 - Elige la visibilidad del repositorio (público o privado). Hazlo *público* para que lo podamos evaluar. Luego haz clic en **Create repository from template** (Crear repositorio a partir de la plantilla).
 - Ya tienes tu propio repositorio creado a partir del template. Puedes ver los archivos y carpetas que contiene, como el archivo README.md o la carpeta src.
