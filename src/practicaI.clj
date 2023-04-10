@@ -56,6 +56,5 @@
 (comment 
 ;; Utilice este espacio para experimentar con el código. Luego, cuando esté seguro que el 
 ;; código trabaja correctamente, cópielo a su lugar correspondiente arriba.   
-  
-(+ 23 34)
+ 
 )
