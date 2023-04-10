@@ -46,6 +46,17 @@ GitHub es un repositorio en la nube basado en un software de control de versione
 
 Ambos entornos son muy similares. Utiliza el que prefieras. 
 
+#### Correr el script para instalar Clojure. ⚠️⚠️¡¡¡ATENCION, este paso no está en el video!!!⚠️⚠️
+
+- Cuando termine de cargar el editor busque en la parte inferior la pestaña llamada "TERMINAL" (si no la consigue también la puede encontrar en el menú). Asegúrese que a mano derecha, en ese mismo rectángulo, esté subrayado con un color más oscuro la opción |>| bash. Deberían ver un prompt así **@usuario_github ->/workspaces/nombre-de-mi-repositorio (main) $**
+  - Luego va a escribir lo siguente (o haga copy-paste, si le resulta más cómodo):
+    ```chmod u+x instalaclj.sh```
+  - Presione *Enter*
+  - Escriba ahora:
+    ```./instalaclj.sh```
+  - Presione *Enter*
+  - Espere a que termine y continúe con el próximo paso.
+
 #### Activando la extensión para Clojure
 
 - Para que nuestro editor de código pueda asistirnos en la programación con Clojure necesitamos instalar una extensión. A mano izquierda selecciona el quinto ícono que representa cuatro cuadrados y en el menu que te aparece a continuación escribe [calva](https://calva.io/).
