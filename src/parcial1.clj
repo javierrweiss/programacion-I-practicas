@@ -10,21 +10,34 @@
 ;;    ni la cantidad de argumentos de las funciones a completar.
 ;;    Puede importar y requerir las librerías que juzgue convenientes (e.g. clojure.string ó clojure.set). 
 
-;; II. Cada función cuenta con un conjunto de tests que verifican que trabaje correctamente. Oprima las teclas Ctrl + Alt + c luego Shift + t
-;;     para correr los tests. Alternativamente, puede presionar F1, escribir 'Calva' y buscar en el menú de comandos la opción "Run All Tests".
-;;     También puede evaluar la función (run-all-tests) que se encuentra en el bloque de comentarios en el archivo de tests. En el mismo 
-;;     archivo puede, de igual modo, correr tests individuales pasándole el nombre del test a la función (run-test).
-;;     Si pasaran todos los tests de las preguntas obligatorias, usted habrá aprobado la evaluación con la máxima calificación. Puede 
-;;     correr los tests la cantidad de veces que necesite.
-;;     Si surge alguna excepción, guarde todo, evalúe primero este namespace, luego diríjase a la carpeta test y evalúe el archivo parcial1test.clj. 
-;;     Recuerde que para evaluar todo el namespace debe presionar Ctrl + Alt + c y luego Enter. O en su defecto presionar F1 y buscar la opción 
-;;     "Load / Evaluate Current File..." en el menu de comandos de Calva. 
-;;     No tiene permitido bajo ninguna circunstancia modificar el archivo de tests. Caso contrario quedará reprobado.
+;;  II. Al conectarse al REPL ¡NO! seleccione la opción :test, déjela sin marcar y presione OK en el cuadro de diálogo.
 
-;; III. Utilice la forma (comment ) para explorar las respuestas y deje allí las cosas que intentó. Se considerará en la evaluación. 
+;; III. Cada función cuenta con un conjunto de tests que verifican que trabaje correctamente. Antes que nada asegúrese de evaluar los namespaces.
+;;      En primer lugar, evalúe este namespace (Ctrl + Alt + c y luego Enter) y posteriormente diríjase donde se encuentran los tests test/parcial1test.clj
+;;      y evalúe ese namespace también. Para correr los tests, oprima las teclas Ctrl + Alt + c luego Shift + t
+;;      Alternativamente, puede presionar F1, escribir 'Calva' y buscar en el menú de comandos la opción "Run All Tests".
+;;      También puede evaluar la función (run-all-tests) que se encuentra en el bloque de comentarios en el archivo de tests. En el mismo 
+;;      archivo puede, de igual modo, correr tests individuales pasándole el nombre del test a la función (run-test).
 
-;; IV. No olvide guardar (Ctrl + k y luego s) sus progresos y cuando esté listo diríjase al ícono de Source Control/ Control de versiones y haga click en el ícono 
-;;     al lado derecho de Commit y haga click sobre la opción Commit & Push para subir los cambios a su repositorio.
+;;      Si pasaran todos los tests de las preguntas obligatorias, usted habrá aprobado la evaluación con la máxima calificación. 
+
+;;      Puede correr los tests la cantidad de veces que necesite y, obviamente, cuando haya realizado una modificación en este archivo y quiera volver
+;;      a correr los tests debe guardar el archivo y evaluar la función que quiera probar.
+
+;;      Si surge algún error al correr los tests, guarde todo, evalúe primero este namespace, luego diríjase a la carpeta test y evalúe el archivo 
+;;      parcial1test.clj. 
+;;      Recuerde que para evaluar todo el namespace debe presionar Ctrl + Alt + c y luego Enter. O en su defecto presionar F1 y buscar la opción 
+;;      "Load / Evaluate Current File..." en el menu de comandos de Calva. 
+
+;;      No tiene permitido bajo ninguna circunstancia modificar el archivo de tests. Caso contrario quedará reprobado.
+
+;; IV. Utilice la forma (comment ) para explorar las respuestas y deje allí las cosas que intentó. Se considerará en la evaluación. 
+
+;; V. No olvide guardar (Ctrl + k y luego s) sus progresos y cuando esté listo diríjase al ícono de Source Control/ Control de versiones, haga click 
+;;     en el ícono al lado derecho de Commit y, finalmente, haga click sobre la opción Commit & Push para subir los cambios a su repositorio.
+
+;; VI. Si tiene dudas o problemas no dude en presentar su consulta en el Foro del Aula Virtual. 
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; COMPLETE LAS SIGUIENTES FUNCIONES ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
