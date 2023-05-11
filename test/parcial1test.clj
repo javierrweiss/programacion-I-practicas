@@ -25,25 +25,50 @@
           resultado [false false]]
       (is (= resultado (obtener-diptongos-y-hiatos input))))))
 
-(deftest posiciones-en-la-tabla
-  (let [resultados [{:local "Atlanta" :goles-local 3 :visitante "Newell's" :goles-visitante 3}
-                    {:local "Real Madrid" :goles-local 2 :visitante "Manchester City" :goles-visitante 3}
-                    {:local "Boca Juniors" :goles-local 2 :visitante "River Plate" :goles-visitante 6}
-                    {:local "Atlanta" :goles-local 1 :visitante "Real Madrid" :goles-visitante 3}
-                    {:local "River Plate" :goles-local 4 :visitante "Manchester City" :goles-visitante 5}
-                    {:local "Boca Juniors" :goles-local 0 :visitante "Newell's" :goles-visitante 0}]
-        posiciones (calcula-posiciones resultados)]
-    (testing "El resultado es un vector y contiene mapas con la forma correcta"
-      (is (and (vector? posiciones) (apply (every-pred map? #(= (keys %) (list :equipo :puntos))) posiciones)))) 
-    (testing "Manchester City es el primero con 6 puntos"
-      (is (= {:equipo "Manchester City" :puntos 6} (first posiciones))))
-    (testing "Boca Juniors o Atalanta está de último con 1 punto"
-      (is (or (= {:equipo "Boca Juniors" :puntos 1} (last posiciones))
-              (= {:equipo "Atlanta" :puntos 1} (last posiciones)))))))
+(deftest evalua-temperaturas
+  (testing "caluroso"
+    (is (= "caluroso" (evaluar-temperatura 28.5))))
+  (testing "frío"
+    (is (= "frío" (evaluar-temperatura 2.7))))
+  (testing "templado"
+    (is (= "templado" (evaluar-temperatura 12))))
+  (testing "helado"
+    (is (= "helado" (evaluar-temperatura -50))))
+  (testing "fresco"
+    (is (= "fresco" (evaluar-temperatura 22.3))))
+  (testing "calor extremo"
+    (is (= "calor extremo" (evaluar-temperatura 48)))))
  
+(deftest aplica-descuentos
+  (let [p1 {:producto "campera" :precio 13432}
+        p2 {:producto "pantalones" :precio 25000}
+        p3 {:producto "zapatos" :precio 39021}
+        p4 {:producto "cinturón" :precio 12000}]
+    (testing (str "Aplica un descuento del 20% a " p1)
+      (is (== 10745.6 (:precio (aplicar-descuento p1 20)))))
+    (testing (str "Aplica un descuento del 5% a " p2)
+      (is (== 23750 (:precio (aplicar-descuento p2 5)))))
+    (testing (str "Aplica un descuente del 10% a " p3)
+      (is (== 35118.9 (:precio (aplicar-descuento p3 10)))))
+    (testing (str "Aplica un descuento del 0.25% a " p4)
+      (is (== 11970 (:precio (aplicar-descuento p4 0.25)))))))
+
+(deftest palabras-unicas 
+  (let [input1 ["hola" "ola" "olla" "Hola" "OLLA" "oLa"]
+        resp1 ["hola" "ola" "olla"]
+        input2 ["vereda" "verídico" "VeReDa" "final" "fina" "FinaL"]
+        resp2 ["vereda" "verídico" "final" "fina"]]
+    (testing "Palabras únicas, primera prueba"
+      (is (= resp1 (obtener-palabras-unicas input1))))
+    (testing "Palabras únicas, segunda prueba"
+      (is (= resp2 (obtener-palabras-unicas input2))))))
+
+
 
 (comment 
- (run-all-tests)
-  
-  
-) 
+  (run-all-tests) 
+  (run-test funcion-de-diptongos-y-hiatos)
+  (run-test aplica-descuentos)
+  (run-test palabras-unicas) 
+  (run-test evalua-temperaturas)
+  ) 
